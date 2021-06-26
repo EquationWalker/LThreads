@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/liuxin/Documents/LThreads/include/LMutex.h
+common.h
+/mnt/d/liuxin/Documents/LThreads/include/common.h
+
+/mnt/d/liuxin/Documents/LThreads/include/common.h
+cstdio
+-
+cstdlib
+-
+pthread.h
+-
+
+/mnt/d/liuxin/Documents/LThreads/test/mutextest.cpp
+../include/LMutex.h
+/mnt/d/liuxin/Documents/LThreads/include/LMutex.h
+
