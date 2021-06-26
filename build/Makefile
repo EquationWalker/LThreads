@@ -150,6 +150,33 @@ src/LMutex.cpp.s:
 	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LMutex.cpp.s
 .PHONY : src/LMutex.cpp.s
 
+src/LWaitCondition.o: src/LWaitCondition.cpp.o
+
+.PHONY : src/LWaitCondition.o
+
+# target to build an object file
+src/LWaitCondition.cpp.o:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o
+.PHONY : src/LWaitCondition.cpp.o
+
+src/LWaitCondition.i: src/LWaitCondition.cpp.i
+
+.PHONY : src/LWaitCondition.i
+
+# target to preprocess a source file
+src/LWaitCondition.cpp.i:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.i
+.PHONY : src/LWaitCondition.cpp.i
+
+src/LWaitCondition.s: src/LWaitCondition.cpp.s
+
+.PHONY : src/LWaitCondition.s
+
+# target to generate assembly for a file
+src/LWaitCondition.cpp.s:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.s
+.PHONY : src/LWaitCondition.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/LMutex.o"
 	@echo "... src/LMutex.i"
 	@echo "... src/LMutex.s"
+	@echo "... src/LWaitCondition.o"
+	@echo "... src/LWaitCondition.i"
+	@echo "... src/LWaitCondition.s"
 .PHONY : help
 
 

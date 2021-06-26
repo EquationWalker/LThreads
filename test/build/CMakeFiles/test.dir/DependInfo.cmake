@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp" "/mnt/d/liuxin/Documents/LThreads/test/build/CMakeFiles/mutex_test.dir/mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.o"
-  "/mnt/d/liuxin/Documents/LThreads/test/mutextest.cpp" "/mnt/d/liuxin/Documents/LThreads/test/build/CMakeFiles/mutex_test.dir/mutextest.cpp.o"
+  "/mnt/d/liuxin/Documents/LThreads/test/test.cpp" "/mnt/d/liuxin/Documents/LThreads/test/build/CMakeFiles/test.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

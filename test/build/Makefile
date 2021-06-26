@@ -111,71 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mutex_test
+# Target rules for targets named test
 
 # Build rule for target.
-mutex_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mutex_test
-.PHONY : mutex_test
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-mutex_test/fast:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/build
-.PHONY : mutex_test/fast
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
-mnt/d/liuxin/Documents/LThreads/src/LMutex.o: mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.o
+test.o: test.cpp.o
 
-.PHONY : mnt/d/liuxin/Documents/LThreads/src/LMutex.o
-
-# target to build an object file
-mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.o:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.o
-.PHONY : mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.o
-
-mnt/d/liuxin/Documents/LThreads/src/LMutex.i: mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.i
-
-.PHONY : mnt/d/liuxin/Documents/LThreads/src/LMutex.i
-
-# target to preprocess a source file
-mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.i:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.i
-.PHONY : mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.i
-
-mnt/d/liuxin/Documents/LThreads/src/LMutex.s: mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.s
-
-.PHONY : mnt/d/liuxin/Documents/LThreads/src/LMutex.s
-
-# target to generate assembly for a file
-mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.s:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.s
-.PHONY : mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp.s
-
-mutextest.o: mutextest.cpp.o
-
-.PHONY : mutextest.o
+.PHONY : test.o
 
 # target to build an object file
-mutextest.cpp.o:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/mutextest.cpp.o
-.PHONY : mutextest.cpp.o
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
+.PHONY : test.cpp.o
 
-mutextest.i: mutextest.cpp.i
+test.i: test.cpp.i
 
-.PHONY : mutextest.i
+.PHONY : test.i
 
 # target to preprocess a source file
-mutextest.cpp.i:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/mutextest.cpp.i
-.PHONY : mutextest.cpp.i
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-mutextest.s: mutextest.cpp.s
+test.s: test.cpp.s
 
-.PHONY : mutextest.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-mutextest.cpp.s:
-	$(MAKE) -f CMakeFiles/mutex_test.dir/build.make CMakeFiles/mutex_test.dir/mutextest.cpp.s
-.PHONY : mutextest.cpp.s
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -185,13 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... mutex_test"
-	@echo "... mnt/d/liuxin/Documents/LThreads/src/LMutex.o"
-	@echo "... mnt/d/liuxin/Documents/LThreads/src/LMutex.i"
-	@echo "... mnt/d/liuxin/Documents/LThreads/src/LMutex.s"
-	@echo "... mutextest.o"
-	@echo "... mutextest.i"
-	@echo "... mutextest.s"
+	@echo "... test"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

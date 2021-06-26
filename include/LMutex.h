@@ -1,9 +1,10 @@
 #pragma once
 #include "common.h"
-
+class LWaitCondition;
 class LMutex final
 {
 public:
+    friend class LWaitCondition;
     enum RecursiveMode
     {
         Recursive,

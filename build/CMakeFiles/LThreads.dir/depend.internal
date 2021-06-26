@@ -5,3 +5,8 @@ CMakeFiles/LThreads.dir/src/LMutex.cpp.o
  /mnt/d/liuxin/Documents/LThreads/include/LMutex.h
  /mnt/d/liuxin/Documents/LThreads/include/common.h
  /mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp
+CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o
+ /mnt/d/liuxin/Documents/LThreads/include/LMutex.h
+ /mnt/d/liuxin/Documents/LThreads/include/LWaitCondition.h
+ /mnt/d/liuxin/Documents/LThreads/include/common.h
+ /mnt/d/liuxin/Documents/LThreads/src/LWaitCondition.cpp
