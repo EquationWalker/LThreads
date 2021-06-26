@@ -9,8 +9,8 @@ public:
     {
         assert(mutex != NULL); // cannot null
 
-        this->mutex = mutex;
-        isLock = true;
+        m = mutex;
+        isLocked = true;
         mutex->lock();
     }
 
@@ -21,16 +21,21 @@ public:
 
     inline void relock() noexcept
     {
-        if (!isLock)
-            mutex->lock();
+        if (!isLocked)
+            m->lock(), isLocked = true;
     }
     inline void unlock() noexcept
     {
-        if (isLock)
-            mutex->unlock(), isLock = false;
+        if (isLocked)
+            m->unlock(), isLocked = false;
+    }
+
+    inline LMutex *mutex() const
+    {
+        return const_cast<LMutex *>(m);
     }
 
 private:
-    LMutex *mutex;
-    bool isLock;
+    LMutex *m;
+    bool isLocked = false;
 };

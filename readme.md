@@ -8,3 +8,6 @@
 
 ## v0.3
     提供锁的RAII接口
+
+## v0.4
+    封装semaphore,修补LMutexLocker
