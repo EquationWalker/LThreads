@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.1)
 project(LThreads)
-include_directories(../../include)
+include_directories(./include)
 aux_source_directory(./src LIB_SRCS)
-set(CMAKE_CXX_FLAGS "${CAMKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CAMKE_CXX_FLAGS} -std=c++14")
 FIND_PACKAGE(Threads)
 
 add_library(LThreads STATIC ${LIB_SRCS})

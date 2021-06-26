@@ -1,6 +1,6 @@
 #include "../include/LMutex.h"
 
-LMutex::LMutex(RecursiveMode mode)
+LMutex::LMutex(RecursiveMode mode) noexcept
 {
     pthread_mutexattr_t attr;
     pthread_mutexattr_init(&attr);
@@ -8,21 +8,21 @@ LMutex::LMutex(RecursiveMode mode)
         pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
     pthread_mutex_init(&mutex, &attr);
 }
-LMutex::~LMutex()
+LMutex::~LMutex() noexcept
 {
     pthread_mutex_destroy(&mutex);
 }
-void LMutex::lock()
+void LMutex::lock() noexcept
 {
     pthread_mutex_lock(&mutex);
 }
 
-bool LMutex::tryLock()
+bool LMutex::tryLock() noexcept
 {
-    return pthread_mutex_trylock(&mutex) == 0;
+    return 0 == pthread_mutex_trylock(&mutex);
 }
 
-void LMutex::unlock()
+void LMutex::unlock() noexcept
 {
     pthread_mutex_unlock(&mutex);
 }

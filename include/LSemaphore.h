@@ -10,9 +10,9 @@ public:
     ~LSemaphore() noexcept;
 
     void acquire() noexcept;
-    void tryAcquire() noexcept;
+    bool tryAcquire() noexcept;
 
-    int available() const;
+    int available() const noexcept;
     void release(int n = 1) noexcept;
 
 private:

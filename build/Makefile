@@ -150,6 +150,60 @@ src/LMutex.cpp.s:
 	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LMutex.cpp.s
 .PHONY : src/LMutex.cpp.s
 
+src/LSemaphore.o: src/LSemaphore.cpp.o
+
+.PHONY : src/LSemaphore.o
+
+# target to build an object file
+src/LSemaphore.cpp.o:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o
+.PHONY : src/LSemaphore.cpp.o
+
+src/LSemaphore.i: src/LSemaphore.cpp.i
+
+.PHONY : src/LSemaphore.i
+
+# target to preprocess a source file
+src/LSemaphore.cpp.i:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LSemaphore.cpp.i
+.PHONY : src/LSemaphore.cpp.i
+
+src/LSemaphore.s: src/LSemaphore.cpp.s
+
+.PHONY : src/LSemaphore.s
+
+# target to generate assembly for a file
+src/LSemaphore.cpp.s:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LSemaphore.cpp.s
+.PHONY : src/LSemaphore.cpp.s
+
+src/LThread.o: src/LThread.cpp.o
+
+.PHONY : src/LThread.o
+
+# target to build an object file
+src/LThread.cpp.o:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LThread.cpp.o
+.PHONY : src/LThread.cpp.o
+
+src/LThread.i: src/LThread.cpp.i
+
+.PHONY : src/LThread.i
+
+# target to preprocess a source file
+src/LThread.cpp.i:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LThread.cpp.i
+.PHONY : src/LThread.cpp.i
+
+src/LThread.s: src/LThread.cpp.s
+
+.PHONY : src/LThread.s
+
+# target to generate assembly for a file
+src/LThread.cpp.s:
+	$(MAKE) -f CMakeFiles/LThreads.dir/build.make CMakeFiles/LThreads.dir/src/LThread.cpp.s
+.PHONY : src/LThread.cpp.s
+
 src/LWaitCondition.o: src/LWaitCondition.cpp.o
 
 .PHONY : src/LWaitCondition.o
@@ -189,6 +243,12 @@ help:
 	@echo "... src/LMutex.o"
 	@echo "... src/LMutex.i"
 	@echo "... src/LMutex.s"
+	@echo "... src/LSemaphore.o"
+	@echo "... src/LSemaphore.i"
+	@echo "... src/LSemaphore.s"
+	@echo "... src/LThread.o"
+	@echo "... src/LThread.i"
+	@echo "... src/LThread.s"
 	@echo "... src/LWaitCondition.o"
 	@echo "... src/LWaitCondition.i"
 	@echo "... src/LWaitCondition.s"

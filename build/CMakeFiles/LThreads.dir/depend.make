@@ -5,6 +5,15 @@ CMakeFiles/LThreads.dir/src/LMutex.cpp.o: ../include/LMutex.h
 CMakeFiles/LThreads.dir/src/LMutex.cpp.o: ../include/common.h
 CMakeFiles/LThreads.dir/src/LMutex.cpp.o: ../src/LMutex.cpp
 
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o: ../include/LSemaphore.h
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o: ../include/common.h
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o: ../src/LSemaphore.cpp
+
+CMakeFiles/LThreads.dir/src/LThread.cpp.o: ../include/LRunnable.h
+CMakeFiles/LThreads.dir/src/LThread.cpp.o: ../include/LThread.h
+CMakeFiles/LThreads.dir/src/LThread.cpp.o: ../include/common.h
+CMakeFiles/LThreads.dir/src/LThread.cpp.o: ../src/LThread.cpp
+
 CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o: ../include/LMutex.h
 CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o: ../include/LWaitCondition.h
 CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o: ../include/common.h

@@ -11,3 +11,6 @@
 
 ## v0.4
     封装semaphore,修补LMutexLocker
+
+## v0.5
+    初步实现LThread, 修补之前一些bug

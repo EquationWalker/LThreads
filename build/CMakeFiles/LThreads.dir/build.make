@@ -70,9 +70,35 @@ CMakeFiles/LThreads.dir/src/LMutex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LThreads.dir/src/LMutex.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp -o CMakeFiles/LThreads.dir/src/LMutex.cpp.s
 
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o: CMakeFiles/LThreads.dir/flags.make
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o: ../src/LSemaphore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/liuxin/Documents/LThreads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o -c /mnt/d/liuxin/Documents/LThreads/src/LSemaphore.cpp
+
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LThreads.dir/src/LSemaphore.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/liuxin/Documents/LThreads/src/LSemaphore.cpp > CMakeFiles/LThreads.dir/src/LSemaphore.cpp.i
+
+CMakeFiles/LThreads.dir/src/LSemaphore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LThreads.dir/src/LSemaphore.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/liuxin/Documents/LThreads/src/LSemaphore.cpp -o CMakeFiles/LThreads.dir/src/LSemaphore.cpp.s
+
+CMakeFiles/LThreads.dir/src/LThread.cpp.o: CMakeFiles/LThreads.dir/flags.make
+CMakeFiles/LThreads.dir/src/LThread.cpp.o: ../src/LThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/liuxin/Documents/LThreads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LThreads.dir/src/LThread.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LThreads.dir/src/LThread.cpp.o -c /mnt/d/liuxin/Documents/LThreads/src/LThread.cpp
+
+CMakeFiles/LThreads.dir/src/LThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LThreads.dir/src/LThread.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/liuxin/Documents/LThreads/src/LThread.cpp > CMakeFiles/LThreads.dir/src/LThread.cpp.i
+
+CMakeFiles/LThreads.dir/src/LThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LThreads.dir/src/LThread.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/liuxin/Documents/LThreads/src/LThread.cpp -o CMakeFiles/LThreads.dir/src/LThread.cpp.s
+
 CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o: CMakeFiles/LThreads.dir/flags.make
 CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o: ../src/LWaitCondition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/liuxin/Documents/LThreads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/liuxin/Documents/LThreads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o -c /mnt/d/liuxin/Documents/LThreads/src/LWaitCondition.cpp
 
 CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.i: cmake_force
@@ -86,16 +112,20 @@ CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.s: cmake_force
 # Object files for target LThreads
 LThreads_OBJECTS = \
 "CMakeFiles/LThreads.dir/src/LMutex.cpp.o" \
+"CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o" \
+"CMakeFiles/LThreads.dir/src/LThread.cpp.o" \
 "CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o"
 
 # External object files for target LThreads
 LThreads_EXTERNAL_OBJECTS =
 
 libLThreads.a: CMakeFiles/LThreads.dir/src/LMutex.cpp.o
+libLThreads.a: CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o
+libLThreads.a: CMakeFiles/LThreads.dir/src/LThread.cpp.o
 libLThreads.a: CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o
 libLThreads.a: CMakeFiles/LThreads.dir/build.make
 libLThreads.a: CMakeFiles/LThreads.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/liuxin/Documents/LThreads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libLThreads.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/liuxin/Documents/LThreads/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libLThreads.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/LThreads.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LThreads.dir/link.txt --verbose=$(VERBOSE)
 

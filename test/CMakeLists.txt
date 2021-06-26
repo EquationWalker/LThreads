@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.1)
-project(mutex_test)
+project(LThreadsTest)
 include_directories(../include)
 link_directories(../build)
-set(CMAKE_CXX_FLAGS "${CAMKE_CXX_FLAGS} -std=c++11")
-FIND_PACKAGE(Threads)
 
-add_executable(test test.cpp ../../src)
-TARGET_LINK_LIBRARIES(test ${CMAKE_THREAD_LIBS_INIT})
-TARGET_LINK_LIBRARIES(test libLThreads.a)
+
+add_executable(testthread testthread.cpp)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads)
+target_link_libraries(testthread ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(testthread libLThreads.a)

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/testthread.dir/testthread.cpp.o  -o testthread   -L/mnt/d/liuxin/Documents/LThreads/test/../build  -Wl,-rpath,/mnt/d/liuxin/Documents/LThreads/test/../build -pthread -Wl,-Bstatic -lLThreads -Wl,-Bdynamic 

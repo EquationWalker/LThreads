@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named testthread
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+testthread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testthread
+.PHONY : testthread
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+testthread/fast:
+	$(MAKE) -f CMakeFiles/testthread.dir/build.make CMakeFiles/testthread.dir/build
+.PHONY : testthread/fast
 
-test.o: test.cpp.o
+testthread.o: testthread.cpp.o
 
-.PHONY : test.o
+.PHONY : testthread.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
+testthread.cpp.o:
+	$(MAKE) -f CMakeFiles/testthread.dir/build.make CMakeFiles/testthread.dir/testthread.cpp.o
+.PHONY : testthread.cpp.o
 
-test.i: test.cpp.i
+testthread.i: testthread.cpp.i
 
-.PHONY : test.i
+.PHONY : testthread.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+testthread.cpp.i:
+	$(MAKE) -f CMakeFiles/testthread.dir/build.make CMakeFiles/testthread.dir/testthread.cpp.i
+.PHONY : testthread.cpp.i
 
-test.s: test.cpp.s
+testthread.s: testthread.cpp.s
 
-.PHONY : test.s
+.PHONY : testthread.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+testthread.cpp.s:
+	$(MAKE) -f CMakeFiles/testthread.dir/build.make CMakeFiles/testthread.dir/testthread.cpp.s
+.PHONY : testthread.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... testthread"
+	@echo "... testthread.o"
+	@echo "... testthread.i"
+	@echo "... testthread.s"
 .PHONY : help
 
 

@@ -1,28 +1,28 @@
 #include "../include/LSemaphore.h"
 
-LSemaphore::LSemaphore(int n)
+LSemaphore::LSemaphore(int n) noexcept
 {
     if (n < 0)
         n = 0;
     sem_init(&sem, 0, n);
 }
 
-LSemaphore::~LSemaphore()
+LSemaphore::~LSemaphore() noexcept
 {
     sem_destroy(&sem);
 }
 
-void LSemaphore::acquire()
+void LSemaphore::acquire() noexcept
 {
     sem_wait(&sem);
 }
 
-void LSemaphore::tryAcquire()
+bool LSemaphore::tryAcquire() noexcept
 {
-    sem_trywait(&sem);
+    return 0 == sem_trywait(&sem);
 }
 
-void LSemaphore::release(int n)
+void LSemaphore::release(int n) noexcept
 {
     if (n <= 0)
         return;
@@ -30,7 +30,7 @@ void LSemaphore::release(int n)
         sem_post(&sem);
 }
 
-int LSemaphore::available() const
+int LSemaphore::available() const noexcept
 {
     int val;
     sem_getvalue(&sem, &val);

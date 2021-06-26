@@ -6,29 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/mnt/d/liuxin/Documents/LThreads/include/LMutex.h
-common.h
-/mnt/d/liuxin/Documents/LThreads/include/common.h
-
-/mnt/d/liuxin/Documents/LThreads/include/LWaitCondition.h
-LMutex.h
-/mnt/d/liuxin/Documents/LThreads/include/LMutex.h
-
-/mnt/d/liuxin/Documents/LThreads/include/common.h
-stdio.h
--
-stdlib.h
--
-unistd.h
--
-pthread.h
--
-
-/mnt/d/liuxin/Documents/LThreads/src/LMutex.cpp
-../include/LMutex.h
-/mnt/d/liuxin/Documents/LThreads/include/LMutex.h
-
-/mnt/d/liuxin/Documents/LThreads/src/LWaitCondition.cpp
-../include/LWaitCondition.h
-/mnt/d/liuxin/Documents/LThreads/include/LWaitCondition.h
-
