@@ -10,8 +10,9 @@ LWaitCondition::~LWaitCondition()
     pthread_cond_destroy(&cond);
 }
 
-void LWaitCondition::wait(LMutex* mutex)
+void LWaitCondition::wait(LMutex *mutex)
 {
+    assert(mutex != NULL); // cannot null
     pthread_cond_wait(&cond, &mutex->mutex);
 }
 

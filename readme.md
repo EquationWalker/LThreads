@@ -5,3 +5,6 @@
 
 ## v0.2
     完成LWaitCondition封装
+
+## v0.3
+    提供锁的RAII接口

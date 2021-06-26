@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
+#include <assert.h>
 #include <pthread.h>
 
 #define L_DISABLE_COPY(Class)      \
