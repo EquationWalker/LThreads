@@ -9,7 +9,7 @@ class LThread
 public:
     typedef pthread_t HANDLE;
 
-    LThread(LRunnable *fun) noexcept;
+    LThread(LRunnable *fun = nullptr) noexcept;
     ~LThread() noexcept;
 
     void start() noexcept;
@@ -20,17 +20,18 @@ public:
     bool isFinished() const noexcept;
     bool isDetached() const noexcept;
 
-    virtual void run() noexcept;
-
     static HANDLE currentThreadId() noexcept;
     static void yieldCurrentThread() noexcept;
     static void exit() noexcept;
+
+protected:
+    virtual void run() noexcept;
 
 private:
     HANDLE pth;
 
     LRunnable *runnable = nullptr;
-    
+
     bool running = false;
     bool finished = false;
     bool detached = false;
