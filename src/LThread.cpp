@@ -35,6 +35,11 @@ void LThread::run() noexcept
     if (runnable != nullptr) runnable->run();
 }
 
+void LThread::yieldCurrentThread() noexcept
+{
+    sched_yield();
+}
+
 void LThread::exit() noexcept
 {
     pthread_exit(NULL);

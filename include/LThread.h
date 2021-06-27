@@ -19,6 +19,7 @@ public:
     virtual void run() noexcept;
 
     static HANDLE currentThreadId() noexcept;
+    static void yieldCurrentThread() noexcept;
     static void exit() noexcept;
 
 private:
