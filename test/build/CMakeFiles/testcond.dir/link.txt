@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11  -rdynamic CMakeFiles/testcond.dir/testcond.cpp.o  -o testcond   -L/mnt/d/liuxin/Documents/LThreads/test/../build  -Wl,-rpath,/mnt/d/liuxin/Documents/LThreads/test/../build -lpthread -Wl,-Bstatic -lLThreads -Wl,-Bdynamic 

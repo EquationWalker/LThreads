@@ -1,3 +1,0 @@
-/mnt/d/liuxin/Documents/LThreads/test/build/CMakeFiles/rebuild_cache.dir
-/mnt/d/liuxin/Documents/LThreads/test/build/CMakeFiles/edit_cache.dir
-/mnt/d/liuxin/Documents/LThreads/test/build/CMakeFiles/testthread.dir

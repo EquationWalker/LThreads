@@ -1,6 +1,7 @@
 #pragma once
 #include "common.h"
 #include "LRunnable.h"
+#include "LMutex.h"
 
 class LThread
 {
@@ -13,8 +14,11 @@ public:
 
     void start() noexcept;
     void detach() noexcept;
-
     void wait() noexcept;
+
+    bool isRuning() const noexcept;
+    bool isFinished() const noexcept;
+    bool isDetached() const noexcept;
 
     virtual void run() noexcept;
 
@@ -24,9 +28,15 @@ public:
 
 private:
     HANDLE pth;
+
     LRunnable *runnable = nullptr;
-    bool isRunning = false;
-    bool isDetached = false;
+    
+    bool running = false;
+    bool finished = false;
+    bool detached = false;
+
+    mutable LMutex mutex;
 
     static void *threadFunc(void *arg) noexcept;
+    static void finish(void *) noexcept;
 };
