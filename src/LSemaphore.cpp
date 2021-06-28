@@ -2,8 +2,7 @@
 
 LSemaphore::LSemaphore(int n) noexcept
 {
-    if (n < 0)
-        n = 0;
+    assert(n >= 0);
     sem_init(&sem, 0, n);
 }
 

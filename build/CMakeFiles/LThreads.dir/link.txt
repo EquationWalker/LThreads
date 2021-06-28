@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libLThreads.a  CMakeFiles/LThreads.dir/src/LMutex.cpp.o CMakeFiles/LThreads.dir/src/LSemaphore.cpp.o CMakeFiles/LThreads.dir/src/LThread.cpp.o CMakeFiles/LThreads.dir/src/LWaitCondition.cpp.o
+/usr/bin/ranlib ../lib/libLThreads.a

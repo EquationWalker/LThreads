@@ -13,10 +13,11 @@ LWaitCondition::~LWaitCondition() noexcept
 void LWaitCondition::wait(LMutex *mutex, unsigned long time) noexcept
 {
     assert(mutex != NULL); // cannot null
-    if (time < 0) time = -time;
-    if (0==time)
+    if (time < 0)
+        time = -time;
+    if (0 == time)
         pthread_cond_wait(&cond, &mutex->mutex);
-    else 
+    else
     {
         struct timespec tt;
         tt.tv_sec = time;

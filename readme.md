@@ -1,4 +1,4 @@
-# LThreads
+# LThreads [参考Qt-Thread](https://github.com/qt/qtbase/tree/dev/src/corelib/thread)
 
 ## v0.1
     完成LMutex基本封装
@@ -28,3 +28,6 @@
 
 ## v0.9
     优化LThread
+
+## v1.0 (算是正式版吧)
+    C API 迁移到 C++ API
